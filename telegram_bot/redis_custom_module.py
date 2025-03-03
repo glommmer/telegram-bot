@@ -5,10 +5,10 @@ import configparser
 from redis import StrictRedis
 from redis.sentinel import Sentinel
 from collections.abc import MutableMapping
-from telegram_bot.ext import ConversationHandler
+from telegram.ext import ConversationHandler
 
 
-# Read configuration file
+# Read configuration files
 current_dir = os.path.dirname(os.path.abspath(__file__))
 ini_path = os.path.join(current_dir, "env/telegram_bot.ini")
 config = configparser.ConfigParser()
